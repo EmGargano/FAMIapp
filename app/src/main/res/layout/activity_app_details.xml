@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/splash_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="43dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/open_sans_light"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/splash_logo"
+        app:layout_constraintStart_toStartOf="@+id/splash_logo"
+        app:layout_constraintTop_toBottomOf="@+id/splash_logo"
+        app:layout_constraintVertical_bias="0.2" />
+
+    <ImageView
+        android:id="@+id/cerchio"
+        android:layout_width="wrap_content"
+        android:layout_height="250dp"
+        android:paddingEnd="7dp"
+        android:paddingTop="5dp"
+        app:layout_constraintLeft_toLeftOf="@+id/splash_logo"
+        app:layout_constraintRight_toRightOf="@+id/splash_logo"
+        app:layout_constraintTop_toTopOf="@id/splash_logo"
+        app:layout_constraintBottom_toBottomOf="@id/splash_logo"
+        app:srcCompat="@drawable/circle"
+        tools:ignore="ContentDescription" />
+
+    <ImageView
+        android:id="@+id/splash_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.2"
+        app:srcCompat="@drawable/hands"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/app_details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/made"
+        android:gravity="center"
+        android:layout_marginTop="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/splash_logo"
+        app:layout_constraintStart_toStartOf="@+id/splash_logo"
+        app:layout_constraintTop_toBottomOf="@+id/splash_logo"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/app_details"
+        app:layout_constraintStart_toStartOf="@+id/app_details"
+        app:layout_constraintTop_toBottomOf="@+id/app_details">
+
+        <TextView
+            android:id="@+id/team1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/team1"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <TextView
+            android:id="@+id/team2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/team2"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+
+
+    </LinearLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>

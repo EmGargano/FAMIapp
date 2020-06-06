@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="it.emgargano.famiapp.RatingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp"
+        android:orientation="vertical">
+
+        <!--CITY RATING-->
+        <TextView
+            android:id="@+id/textViewCityRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:text="@string/cityRating" />
+
+        <RatingBar
+            android:id="@+id/ratingBarCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <!--CENTER RATING-->
+        <TextView
+            android:id="@+id/textViewCenterRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:text="@string/centerRating" />
+
+        <RatingBar
+            android:id="@+id/ratingBarCenter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <!--APP RATING-->
+        <TextView
+            android:id="@+id/textViewAppRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:text="@string/appRating"
+            />
+
+        <RatingBar
+            android:id="@+id/ratingBarApp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!--OPTIONAL COMMENT-->
+        <TextView
+            android:id="@+id/textViewComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textAppearance="?attr/textAppearanceHeadline5"
+            android:text="@string/comment" />
+
+        <EditText
+            android:id="@+id/editTextComment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@null"
+            android:ems="10"
+            android:hint="@string/hintComment"
+            android:inputType="textMultiLine"
+            android:minEms="10"
+            android:selectAllOnFocus="false"
+            android:singleLine="false"
+            android:textSize="@dimen/textSizeDescription" />
+
+        <Button
+            android:id="@+id/buttonSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:theme="@style/ButtonTheme"
+            android:text="@string/submit_rating"
+            />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/login_layout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/email_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin">
+
+        <ImageView
+            android:id="@+id/logo"
+            tools:ignore="ContentDescription"
+            android:layout_width="match_parent"
+            android:layout_height="183dp"
+            android:layout_marginTop="@dimen/margin_top_layout"
+            app:srcCompat="@drawable/hands" />
+
+        <TextView
+            android:id="@+id/appName"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/space_under_image"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/open_sans_light"
+            android:textColor="@color/colorPrimaryDark"
+            android:text="@string/app_name"
+            android:textAlignment="center"
+            android:textSize="@dimen/text_dimension_title"
+            android:textStyle="bold" />
+
+        <!-- Login progress -->
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:visibility="invisible" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <AutoCompleteTextView
+                android:id="@+id/input_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_email"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:textSize="@dimen/text_dimension_login"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/input_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/prompt_password"
+                android:imeActionLabel="@string/action_sign_in_short"
+                android:imeActionId="2"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="@dimen/text_dimension_login"
+                android:singleLine="true" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:theme="@style/ButtonTheme"
+            android:text="@string/action_sign_in" />
+
+        <Button
+            android:id="@+id/password_reset"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_layout"
+            style="?attr/borderlessButtonStyle"
+            android:textAppearance="?attr/textAppearanceHeadline3"
+            android:textSize="14sp"
+            android:text="@string/str_reimposta_password"
+            android:textAlignment="center" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

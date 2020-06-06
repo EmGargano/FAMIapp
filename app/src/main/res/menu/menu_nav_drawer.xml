@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+
+        <item
+            android:id="@+id/nav_medicalRecords"
+            android:icon="@drawable/medical_center"
+            android:title="@string/medicalRecords" />
+
+        <item
+            android:id="@+id/nav_centro_accoglienza"
+            android:icon="@drawable/ic_home"
+            android:title="@string/titleAcceptance" />
+        <item
+            android:id="@+id/nav_questionnaires"
+            android:icon="@drawable/ic_questionnaires"
+            android:title="@string/questionnaires" />
+
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group2">
+
+        <item
+            android:id="@+id/nav_personal_data"
+            android:icon="@drawable/ic_account"
+            android:title="@string/personalData" />
+
+        <item
+            android:id="@+id/nav_show_qr_code"
+            android:icon="@drawable/ic_qrcode"
+            android:title="@string/personalCode" />
+
+        <item
+            android:id="@+id/nav_documents"
+            android:icon="@drawable/file_document_outline"
+            android:title="@string/bylaw" />
+
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/youtube"
+            android:title="@string/video" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group3">
+
+        <item
+            android:id="@+id/nav_rating_app"
+            android:icon="@drawable/star_icon"
+            android:title="@string/ratingApp" />
+
+        <item
+            android:id="@+id/nav_app_details"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/appDetails" />
+    </group>
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/group5">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/signout" />
+
+    </group>
+</menu>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/records_bottom"
+        android:icon="@drawable/medical_center"
+        android:title="@string/records_bottom">
+    </item>
+
+    <item
+        android:id="@+id/profile_bottom"
+        android:icon="@drawable/ic_account"
+        android:title="@string/profile_bottom">
+    </item>
+
+</menu>

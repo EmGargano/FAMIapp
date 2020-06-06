@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group1">
+
+        <item
+            android:id="@+id/nav_patients_list"
+            android:icon="@drawable/ic_format_list_bulleted_black_24dp"
+            android:title="@string/patientList" />
+
+        <item
+            android:id="@+id/nav_chat"
+            android:icon="@drawable/ic_chat_24dp"
+            android:title="@string/chat" />
+        <item
+            android:id="@+id/nav_video"
+            android:icon="@drawable/youtube"
+            android:title="@string/video" />
+        <item
+            android:id="@+id/nav_questionnaires"
+            android:icon="@drawable/ic_questionnaires"
+            android:title="@string/questionnaires" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group2">
+
+        <item
+            android:id="@+id/nav_app_details"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="@string/appDetails" />
+
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group3">
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/signout" />
+
+    </group>
+
+</menu>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:fitsSystemWindows="true"
+        tools:context="it.emgargano.famiapp.QuestionnairesActivity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/marginStart"
+        android:layout_marginEnd="@dimen/marginEnd">
+
+
+        <Button
+            android:id="@+id/btnSf12"
+            style="?attr/borderlessButtonStyle"
+            android:theme="@style/ButtonThemeNoBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_layout"
+            android:layout_gravity="center"
+            android:text="@string/sf12Questionnaires" />
+
+        <Button
+            android:id="@+id/btnHabits"
+            style="?attr/borderlessButtonStyle"
+            android:theme="@style/ButtonThemeNoBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/habitsQuestionnaires" />
+
+        <Button
+            android:id="@+id/btnDemo"
+            style="?attr/borderlessButtonStyle"
+            android:theme="@style/ButtonThemeNoBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/demographicQuestionnaires" />
+
+        <Button
+            android:id="@+id/btnQuality"
+            style="?attr/borderlessButtonStyle"
+            android:theme="@style/ButtonThemeNoBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:text="@string/qualityOfLifeQuestionnaires" />
+    </LinearLayout>

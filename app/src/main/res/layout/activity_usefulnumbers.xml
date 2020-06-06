@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="it.emgargano.famiapp.UsefulNumbersActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!--AMBULANCE-->
+        <Button
+            android:id="@+id/btnAmbulance"
+            style="?attr/borderlessButtonStyle"
+            android:theme="@style/ButtonThemeNoBorder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/ambulance" />
+
+        <!--FIRE BRIGADE-->
+        <Button
+            android:id="@+id/btnFireBrigade"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/firebrigade"
+            android:theme="@style/ButtonThemeNoBorder"/>
+
+            <!--POLICE-->
+        <Button
+            android:id="@+id/btnPolice"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/police"
+            android:theme="@style/ButtonThemeNoBorder"/>
+
+            <!--MILITARY POLICE-->
+        <Button
+            android:id="@+id/btnMilitaryPolice"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/militarypolice"
+            android:theme="@style/ButtonThemeNoBorder"/>
+
+            <!--FINANCE GUARD-->
+        <Button
+            android:id="@+id/btnFinanceGuard"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/financeguard"
+            android:theme="@style/ButtonThemeNoBorder"/>
+
+            <!--SEA EMERGENCY-->
+        <Button
+            android:id="@+id/btnSeaEmergency"
+            style="?attr/borderlessButtonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/seaemergency"
+            android:theme="@style/ButtonThemeNoBorder"/>
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.DrawerLayout>

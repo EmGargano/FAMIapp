@@ -1,0 +1,185 @@
+<resources>
+    <string name="app_name" translatable="false">FAMI App</string>
+    <string name="loginFailed">Email or password are wrong</string>
+    <string name="personalData">Personal Data</string>
+    <string name="informationSection" translatable="false">Info</string>
+    <string name="medicalRecords">Medical Records</string>
+    <string name="questionnaires">Questionnaires</string>
+    <string name="chat" translatable="false">Chat</string>
+    <string name="video" translatable="false">Video</string>
+    <string name="acceptance">Reception Center</string>
+    <string name="cityInfo">City Info</string>
+    <string name="bylaw">Documents</string>
+    <string name="myInfo">My Info</string>
+    <string name="sf12Questionnaires">SF12</string>
+    <string name="habitsQuestionnaires">Habits</string>
+    <string name="usefulNumbers">Useful Numbers</string>
+    <string name="demographicQuestionnaires">Demographic</string>
+    <string name="qualityOfLifeQuestionnaires">Quality Of Life</string>
+    <string name="name">Name</string>
+    <string name="surname">Surname</string>
+    <string name="date_of_birth">Date of birth</string>
+    <string name="birth_place">Birth place</string>
+    <string name="gender">Gender</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="cell">Phone number</string>
+    <string name="radioBtnMale" translatable="false">M</string>
+    <string name="radioBtnFemale" translatable="false">F</string>
+    <string name="titleAcceptance">Reception Center</string>
+    <string name="centerName">Center name</string>
+    <string name="centerLocation">Location</string>
+    <string name="centerAddress">Address</string>
+    <string name="centerServices">Services</string>
+    <string name="regulationDownload">Regulation</string>
+    <string name="ambulance">Ambulance</string>
+    <string name="firebrigade">Fire Brigade</string>
+    <string name="police">Police</string>
+    <string name="militarypolice">Military Police</string>
+    <string name="financeguard">Finance Guard</string>
+    <string name="seaemergency">Sea Emergency</string>
+    <string name="pathologyDetails">Pathology details</string>
+    <string name="addPathology">Add pathology</string>
+    <string name="pathology">Pathology</string>
+    <string name="retrieveBasicNecessities">Basic necessities</string>
+    <string name="appDetails">Details</string>
+    <string name="rating">Rating</string>
+    <string name="temperature">Temperature</string>
+    <string name="bloodPressure">Blood pressure</string>
+    <string name="glycemia">Glycemia</string>
+    <string name="heartbeat">Heartbeat</string>
+    <string name="ecg" translatable="false">ECG</string>
+    <string name="symptoms">Symptoms</string>
+    <string name="ambulatory">Hospital</string>
+    <string name="municipality">Municipality</string>
+    <string name="postoffice">Post office</string>
+    <string name="placesofworship">Places of worship</string>
+    <string name="school">School</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="searchPatient">Scan QR code</string>
+    <string name="searchPatientList">Search patient</string>
+    <string name="kitOpening">Kit opening</string>
+    <string name="failedMessage">Message not sent</string>
+    <string name="failedMessageLoading">Failed to load messages</string>
+    <string name="emptyPatientList">No patients available </string>
+    <string name="closedChatMessage">Chat closed, it\'s open from %1$s to %2$s, retry later</string>
+    <string name="openChatTime" translatable="false">9:00</string>
+    <string name="closedChatTime" translatable="false">22:00</string>
+    <string name="patientList">Patients list</string>
+
+    <string name="chatFABLabel">Send a message</string>
+    <string name="bluetoothFABLabel">Open bluetooth kit</string>
+
+    <string name="insertCode">Insert patient\'s code</string>
+    <string name="search">Search</string>
+    <string name="scan">Scan QR code</string>
+    <string name="cityRating">How would your rate your city?</string>
+    <string name="appRating">How would your rate this application?</string>
+    <string name="centerRating">How would your rate your center?</string>
+    <string name="comment">Add a comment (optional)</string>
+    <string name="hintComment">Comment</string>
+    <string name="submit_rating">Submit</string>
+    <string name="update_button">Update</string>
+    <string name="add_button">Add</string>
+    <string name="food">Food goods</string>
+    <string name="medicines">Prescribed drugs</string>
+    <string name="add" translatable="false">+</string>
+    <string name="addUser">Add user</string>
+    <string name="update">Update</string>
+    <string name="description">Description</string>
+    <string name="nutritionalSuggestions">Nutritional Suggestions</string>
+    <string name="lifestyle">Recommended lifestyle</string>
+    <string name="modifyFood">Update finding goods</string>
+    <string name="readRatings">Read ratings</string>
+    <string name="ratingApp">Rate the app</string>
+    <string name="addAcceptance">Add new acceptance</string>
+    <string name="addSuccessed">Added successfully</string>
+    <string name="addFailed">Added failed</string>
+    <string name="failedNumberDigits">You need to insert at least 6 numbers!</string>
+    <string name="healthStandards">Health standards</string>
+    <string name="internalRegulation">Internal regulation</string>
+    <string name="norms">Behaviour norms</string>
+    <string name="discoverable">Bluetooth on</string>
+    <string name="btnSend">send</string>
+    <string name="off">Bluetooth Off</string>
+    <string name="pages">Pages</string>
+    <string name="navigation_drawer_open" translatable="false">Open navigation draw</string>
+    <string name="navigation_drawer_close" translatable="false">Close navigation draw</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="city">City</string>
+    <string name="city_show">Show city</string>
+    <string name="mallLocation">Mall location</string>
+    <string name="pharmacyLocation">Pharmacy location</string>
+    <string name="downloadSuccess">File downloaded</string>
+    <string name="role">Role</string>
+    <string name="nationality">Nationality</string>
+    <string name="paired">Devices paired</string>
+    <string name="detected">Devices detected</string>
+    <string name="services">List of services provided by the center</string>
+    <string name="service_bottom">Services</string>
+    <string name="info_bottom">Info</string>
+    <string name="records_bottom">Records</string>
+    <string name="profile_bottom">Profile</string>
+    <string name="goods_bottom">Goods</string>
+    <string name="readAnswers">Read answers</string>
+    <string name="normsDescription">The document provides the agreements for reception of migrants and asylum applicant, their rights and duties.</string>
+    <string name="made">Authors</string>
+    <string name="avg">Avg</string>
+    <string name="celsius" translatable="false">°C</string>
+    <string name="valueString">Value:</string>
+    <string name="dataString">Date:</string>
+    <string name="signout">Logout</string>
+    <string name="alertPermissionsNeeded">You need to allow access permissions</string>
+
+    <plurals name="visitedPatient">
+        <item quantity="one">Visited patient</item>
+        <item quantity="other">Visited patients</item>
+    </plurals>
+    <string name="personalCode">QR Code</string>
+    <string name="position_show">Show position</string>
+    <string name="selectLanguage">Select language</string>
+    <string name="bylawDescription">Here you can find some useful documents that may help you.
+        In this section you will find: an introduction to Italy and its laws, an handbook of good living,
+        the italian constitution and all the infos about the national health service.
+        Choose the language and press the file name to download it.</string>
+
+    <string name="nome_cognome">Name and Surname</string>
+    <string name="nome">Name</string>
+    <string name="cognome">Surname</string>
+    <string name="genere">Gender</string>
+    <string name="data_nascita">Birth Date</string>
+    <string name="provenienza">Nazionality</string>
+    <string name="citta_provenienza">City of origin</string>
+    <string name="stato_provenienza">State of origin</string>
+    <string name="num_telefono">Telephone number</string>
+    <string name="mod_anagrafica">Edit fields</string>
+    <string name="genere_maschio">Male</string>
+    <string name="genere_femmina">Female</string>
+    <string name="esempio_data" translatable="false">gg/mm/aaaa</string>
+    <string name="campi_vuoti">No field should be empty</string>
+    <string name="emptyFieldsAdd">At least one field should be filled in</string>
+    <string name="ratingAddedComplete">Added rating!</string>
+    <string name="ratingAddedFailed">Rating not added</string>
+    <string name="noMedicalRecords">No medical records added</string>
+    <string name="successPathology">Pathology record added!</string>
+    <string name="failurePathology">No pathology record added</string>
+    <string name="richiedenteAsilo_check">Asylum applicant</string>
+    <string name="dottore_check">Doctor</string>
+
+    <string name="esempio_messaggio">Text a message</string>
+    <string name="valueParameter">Enter value</string>
+    <string name="valueSymptoms">Enter symptoms</string>
+    <string name="send_button_label">Send</string>
+    <string name="insert_email">Enter the email in the email field</string>
+    <string name="email_sent">Reset email sent</string>
+
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Login</string>
+    <string name="action_sign_in">Login</string>
+    <string name="str_reimposta_password">Did you forgot your password?</string>
+    <string name="pathologyName">Pathology name</string>
+    <string name="usefulNumbersLabel">Call a useful number</string>
+    <string name="team1" translatable="false">Emanuele Gargano</string>
+    <string name="team2" translatable="false">Vito Fazio</string>
+
+</resources>

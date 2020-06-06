@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".AddAcceptanceActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--    PAGE TITLE -->
+        <TextView
+            android:id="@+id/pageTitle"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:layout_gravity="center"
+            android:textAllCaps="true"
+            android:text="@string/addAcceptance" />
+
+        <!--    TEXT LINE COLUMN  -->
+        <!--CENTER NAME-->
+        <TextView
+            android:id="@+id/textViewCenterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="90dp"
+            android:text="@string/centerName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pageTitle" />
+
+        <EditText
+            android:id="@+id/editTextCenterName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:ems="10"
+            android:textSize="@dimen/text_dimension_edit"
+            android:inputType="text"
+            tools:text="asilApp"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCenterName" />
+
+
+        <!--CENTER LOCATION-->
+        <TextView
+            android:id="@+id/textViewCenterLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="16dp"
+            android:text="@string/centerAddress"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTextCenterName" />
+
+        <EditText
+            android:id="@+id/editTextCenterLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:ems="10"
+            android:inputType="text"
+            tools:text="asilApp"
+            android:textSize="@dimen/text_dimension_edit"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCenterLocation" />
+
+        <!--CITY-->
+        <TextView
+            android:id="@+id/textViewCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="@dimen/marginStart"
+            android:text="@string/city" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="wrap_content"
+            android:layout_height="46dp"
+            android:ems="10"
+            android:layout_marginStart="@dimen/marginStart"
+            android:spinnerMode="dropdown"
+            app:layout_constraintBottom_toBottomOf="@+id/textViewCenterServices"
+            app:layout_constraintStart_toStartOf="@+id/textViewCity"
+            app:layout_constraintTop_toTopOf="@+id/textViewCity" />
+
+
+        <!--CENTER SERVICES-->
+        <TextView
+            android:id="@+id/textViewCenterServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:layout_marginTop="16dp"
+            android:text="@string/centerServices"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerCity" />
+
+        <EditText
+            android:id="@+id/editTextCenterServices"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginStart"
+            android:hint="@string/services"
+            android:inputType="text"
+            android:textSize="@dimen/text_dimension_edit"
+            android:textColor="#000000"
+            app:layout_constraintStart_toStartOf="@+id/textViewCenterServices"
+            app:layout_constraintTop_toBottomOf="@+id/textViewCenterServices" />
+
+        <Button
+            android:id="@+id/button_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_gravity="center"
+            android:theme="@style/ButtonTheme"
+            android:text="@string/add_button" />
+
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

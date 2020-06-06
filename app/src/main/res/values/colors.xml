@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <color name="colorPrimary">#15d1a9</color>
+    <color name="colorPrimaryDark">#009f7a</color>
+    <color name="colorSecondary">#ffa726</color>
+    <color name="colorSecondaryDark">#c77800</color>
+    <color name="colorSecondaryLight">#ffd95b</color>
+    <color name="colorPrimaryAlternative">#ffca28</color>
+    <color name="colorPrimaryDarkAlternative">#c79a00</color>
+    <color name="colorAccent">#6effe8</color>
+    <color name="primary_light">#5FE5BC</color>
+    <color name="primary_text">#3E3E3E</color>
+    <color name="secondary_text">#EBEBEB</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+    <color name="statubar">#c7c7c7</color>
+    <color name="window_background">#FFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="colorPrimary_nightmode">#DE15D1A9</color>
+    <color name="colorPrimaryDark_nightmode">#DE009F7A</color>
+    <color name="white_nightmode">#DDFFFFFF</color>
+    <color name="whiteMedium_nightmode">#99FFFFFF</color>
+    <color name="grey">#7C000000</color>
+    <color name="actionbar_nightmode">#121212</color>
+    <color name="tabTextColor">#ecebea</color>
+
+</resources>
+
