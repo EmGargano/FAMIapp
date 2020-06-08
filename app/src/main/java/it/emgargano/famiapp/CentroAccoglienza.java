@@ -1,29 +1,32 @@
 package it.emgargano.famiapp;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.NonNull;
-import android.support.design.internal.TextScale;
-import android.support.design.widget.BottomNavigationView;
-import android.support.transition.TransitionManager;
-import android.support.transition.TransitionSet;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v4.view.animation.FastOutSlowInInterpolator;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.interpolator.view.animation.FastOutSlowInInterpolator;
+import androidx.lifecycle.Lifecycle;
+import androidx.transition.TransitionManager;
+import androidx.transition.TransitionSet;
+import androidx.viewpager2.widget.ViewPager2;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
+
 
 public class CentroAccoglienza extends AppCompatActivity {
 
-    ViewPager viewpager;
+    ViewPager2 viewpager;
     BottomNavigationView bottomNavigationView;
     AcceptanceActivity acceptanceFragment;
     CityInfoActivity cityInfoFragment;
@@ -60,7 +63,7 @@ public class CentroAccoglienza extends AppCompatActivity {
         });
 
         dashboardNavigationController = new DashboardNavigationController(bottomNavigationView);
-        viewpager.addOnPageChangeListener(new ViewPager.OnPageChangeListener() {
+        viewpager.registerOnPageChangeCallback(new ViewPager2.OnPageChangeCallback() {
             @Override
             public void onPageScrolled(int i, float v, int i1) {
 
@@ -88,7 +91,7 @@ public class CentroAccoglienza extends AppCompatActivity {
     }
 
     public void setupViewPager() {
-        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
+        ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager(), getLifecycle());
         acceptanceFragment = new AcceptanceActivity();
         cityInfoFragment = new CityInfoActivity();
         retrieveBasicNecessitiesFragment = new RetrieveBasicNecessitiesActivity();
@@ -98,26 +101,27 @@ public class CentroAccoglienza extends AppCompatActivity {
         viewpager.setAdapter(adapter);
     }
 
-    public static class ViewPagerAdapter extends FragmentPagerAdapter {
+    public static class ViewPagerAdapter extends FragmentStateAdapter {
         private final List<Fragment> mFragmentList = new ArrayList<>();
 
-        ViewPagerAdapter(FragmentManager manager) {
-            super(manager);
-        }
-        @Override
-        public Fragment getItem(int position) {
-            return mFragmentList.get(position);
+        ViewPagerAdapter(FragmentManager fm, Lifecycle lifecycle) {
+            super(fm, lifecycle);
         }
 
+        @NonNull
         @Override
-        public int getCount() {
-            return mFragmentList.size();
+        public Fragment createFragment(int position) {
+            return mFragmentList.get(position);
         }
 
         public void addFragment(Fragment fragment) {
             mFragmentList.add(fragment);
         }
 
+        @Override
+        public int getItemCount() {
+            return mFragmentList.size();
+        }
     }
 
     public class DashboardNavigationController {

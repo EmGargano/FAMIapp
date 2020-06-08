@@ -1,21 +1,15 @@
 package it.emgargano.famiapp;
 
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import it.emgargano.famiapp.sms.prova.R;
+import androidx.appcompat.app.AppCompatActivity;
+
+import famiapp.R;
 
 public class AppDetailsActivity extends AppCompatActivity {
 
@@ -25,7 +19,7 @@ public class AppDetailsActivity extends AppCompatActivity {
     private Animation fadingAppname;
     private ImageView logo;
     private ImageView cerchio;
-    private TextView appname, appDetails, team1, team2;
+    private TextView appname, appDetails, team1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {    //Called when the activity is starting.
@@ -42,8 +36,6 @@ public class AppDetailsActivity extends AppCompatActivity {
         appDetails.setVisibility(View.INVISIBLE);
         team1 = findViewById(R.id.team1);
         team1.setVisibility(View.INVISIBLE);
-        team2 = findViewById(R.id.team2);
-        team2.setVisibility(View.INVISIBLE);
 
         cerchioRotation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotation_cerchio_anim);
         androidZoomInAnimation = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoom_in_anim);
@@ -66,8 +58,6 @@ public class AppDetailsActivity extends AppCompatActivity {
                 appDetails.startAnimation(fadingAppname);
                 team1.setVisibility(View.VISIBLE);
                 team1.startAnimation(fadingAppname);
-                team2.setVisibility(View.VISIBLE);
-                team2.startAnimation(fadingAppname);
                 cerchio.startAnimation(cerchioRotation);
             }
 

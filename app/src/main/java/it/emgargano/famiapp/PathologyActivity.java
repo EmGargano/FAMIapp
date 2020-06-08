@@ -1,19 +1,13 @@
 package it.emgargano.famiapp;
 
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -22,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import it.emgargano.famiapp.models.Pathology;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class PathologyActivity extends AppCompatActivity {
     //Variable declaration
@@ -81,14 +75,6 @@ public class PathologyActivity extends AppCompatActivity {
             }
         });
 
-    }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Intent refresh = new Intent(this, PathologyActivity.class);
-        startActivity(refresh);
-        this.finish();
     }
 
     @Override

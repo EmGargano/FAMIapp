@@ -1,12 +1,13 @@
 package it.emgargano.famiapp;
 
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.fragment.app.Fragment;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -15,7 +16,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import it.emgargano.famiapp.models.User;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class PatientProfile extends Fragment {
     private static final String ARG_PARAM1 = "patient_ID";

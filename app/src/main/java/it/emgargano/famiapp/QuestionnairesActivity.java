@@ -2,16 +2,16 @@ package it.emgargano.famiapp;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.v4.app.NavUtils;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 
 import it.emgargano.famiapp.models.Questionnaires;
 import it.emgargano.famiapp.models.User;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class QuestionnairesActivity extends AppCompatActivity {
     //variable declaration
@@ -47,7 +47,7 @@ public class QuestionnairesActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
         }
 
         btnSf12 = findViewById(R.id.btnSf12);
@@ -92,16 +92,6 @@ public class QuestionnairesActivity extends AppCompatActivity {
         btnHabits.setOnClickListener(btnHabits_listener);
         btnQuality.setOnClickListener(btnQuality_listener);
     }
-
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        Intent refresh = new Intent(this, QuestionnairesActivity.class);
-        startActivity(refresh);
-        this.finish();
-
-    }
-
 
     public View.OnClickListener btnSf12_listener = new View.OnClickListener() {
         @Override

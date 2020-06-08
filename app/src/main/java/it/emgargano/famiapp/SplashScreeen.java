@@ -1,10 +1,9 @@
 package it.emgargano.famiapp;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.app.AppCompatDelegate;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
@@ -12,6 +11,9 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.firebase.FirebaseApp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -21,7 +23,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
 import it.emgargano.famiapp.models.User;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 
 public class SplashScreeen extends AppCompatActivity {
@@ -34,6 +36,7 @@ public class SplashScreeen extends AppCompatActivity {
     private ImageView logo;
     private ImageView cerchio;
     private TextView appname;
+    FirebaseApp firebaseApp;
 
     private DatabaseReference mUserReference;
     private int mRole;
@@ -44,6 +47,8 @@ public class SplashScreeen extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splash_screen);
+
+        firebaseApp = FirebaseApp.initializeApp(getApplicationContext());
 
         logo = findViewById(R.id.splash_logo);
         cerchio = findViewById(R.id.cerchio);
@@ -106,6 +111,7 @@ public class SplashScreeen extends AppCompatActivity {
     }
 
     public void onLoadCurrentUserRole() {
+
         //Get Current User
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
         //Get userId

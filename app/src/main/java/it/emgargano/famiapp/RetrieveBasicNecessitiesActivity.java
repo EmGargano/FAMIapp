@@ -2,8 +2,12 @@ package it.emgargano.famiapp;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
+
+
+import androidx.annotation.NonNull;
+
+import androidx.fragment.app.Fragment;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -25,7 +29,7 @@ import it.emgargano.famiapp.models.Acceptance;
 import it.emgargano.famiapp.models.City;
 import it.emgargano.famiapp.models.Necessities;
 import it.emgargano.famiapp.models.User;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class RetrieveBasicNecessitiesActivity extends Fragment {
     //variable declaration

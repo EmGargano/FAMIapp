@@ -1,17 +1,18 @@
 package it.emgargano.famiapp;
 
 import android.content.res.Configuration;
-import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DataSnapshot;
@@ -24,7 +25,7 @@ import java.text.DecimalFormat;
 
 import it.emgargano.famiapp.models.Rating;
 import it.emgargano.famiapp.models.User;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class ReadRatingsActivity extends AppCompatActivity {
     //variable declaration
@@ -39,7 +40,7 @@ public class ReadRatingsActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
         }
 
         recyclerView = findViewById(R.id.ratingList);

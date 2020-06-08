@@ -5,19 +5,6 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.annotation.NonNull;
-import android.support.annotation.RequiresApi;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.NavigationView;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.CardView;
-import android.support.v7.widget.Toolbar;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.MenuItem;
@@ -29,10 +16,24 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.core.view.GravityCompat;
+import androidx.core.widget.NestedScrollView;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import com.github.clans.fab.FloatingActionButton;
 import com.github.clans.fab.FloatingActionMenu;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.FirebaseDatabase;
@@ -41,7 +42,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import it.emgargano.famiapp.models.MedicalRecord;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class MedicalRecordsActivity extends AppCompatActivity {
 
@@ -56,12 +57,12 @@ public class MedicalRecordsActivity extends AppCompatActivity {
     Button add3;
     Button add4;
     Button add5;
-     CardView image_seeTemperatureStats;
-     CardView image_seeBloodPressureStats;
-     CardView image_seeGlycemiaStats;
-     CardView image_seeHeartbeatStats;
-     CardView image_seeSymptomsStats;
-     CardView image_seePathologyStats;
+    CardView image_seeTemperatureStats;
+    CardView image_seeBloodPressureStats;
+    CardView image_seeGlycemiaStats;
+    CardView image_seeHeartbeatStats;
+    CardView image_seeSymptomsStats;
+    CardView image_seePathologyStats;
     FloatingActionButton fabChat, fabBluetooth, fabNumbers;
     FloatingActionMenu fabMenu;
     private String uId;

@@ -1,21 +1,16 @@
 package it.emgargano.famiapp;
 
-import android.net.Uri;
-import android.support.annotation.NonNull;
-import android.support.design.widget.NavigationView;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.content.Intent;
-import android.support.v7.widget.Toolbar;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 
-import it.emgargano.famiapp.sms.prova.R;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
+import famiapp.R;
 
 public class UsefulNumbersActivity extends AppCompatActivity {
 
@@ -47,14 +42,6 @@ public class UsefulNumbersActivity extends AppCompatActivity {
         btnSeaEmergency.setOnClickListener(imageViewSeaEmergency_listener);
         btnFireBrigade.setOnClickListener(imageViewFireBrigade_listener);
 
-    }
-
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-
-        Intent refresh = new Intent(this, UsefulNumbersActivity.class);
-        startActivity(refresh);
-        this.finish();
     }
 
     public View.OnClickListener imageViewAmbulance_listener = new View.OnClickListener() {

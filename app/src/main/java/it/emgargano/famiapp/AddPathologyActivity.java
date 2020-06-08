@@ -2,11 +2,6 @@ package it.emgargano.famiapp;
 
 import android.content.Context;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.design.widget.Snackbar;
-import android.support.design.widget.TextInputLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.view.MotionEvent;
@@ -15,8 +10,14 @@ import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.SimpleDateFormat;
@@ -24,7 +25,7 @@ import java.util.Date;
 
 import it.emgargano.famiapp.models.MedicalRecord;
 import it.emgargano.famiapp.models.Pathology;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class AddPathologyActivity extends AppCompatActivity {
     private static final String TAG = "AddPathologyActivity";
@@ -138,7 +139,7 @@ public class AddPathologyActivity extends AppCompatActivity {
                     finish();
                 } else {
                     //failure message
-                    Snackbar.make(view, getString(R.string.failurePathology), Toast.LENGTH_LONG).show();
+                    Snackbar.make(view, getString(R.string.failurePathology), Snackbar.LENGTH_LONG).show();
                 }
             }
         });

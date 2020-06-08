@@ -1,16 +1,17 @@
 package it.emgargano.famiapp;
 
 import android.graphics.Bitmap;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.ImageView;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.zxing.WriterException;
 
 import androidmads.library.qrgenearator.QRGContents;
 import androidmads.library.qrgenearator.QRGEncoder;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class PopUpQrcodeActivity extends AppCompatActivity {
 

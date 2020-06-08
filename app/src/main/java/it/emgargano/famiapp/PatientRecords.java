@@ -3,12 +3,6 @@ package it.emgargano.famiapp;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.constraint.ConstraintLayout;
-import android.support.design.widget.TextInputLayout;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.NestedScrollView;
-import android.support.v7.widget.CardView;
 import android.transition.AutoTransition;
 import android.transition.TransitionManager;
 import android.view.LayoutInflater;
@@ -21,15 +15,21 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
+import androidx.fragment.app.Fragment;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.FirebaseDatabase;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import it.emgargano.famiapp.models.MedicalRecord;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
 
 public class PatientRecords extends Fragment {
     private static final String ARG_PARAM1 = "patient_ID";
@@ -46,12 +46,12 @@ public class PatientRecords extends Fragment {
     Button add3;
     Button add4;
     Button add5;
-     CardView image_seeTemperatureStats;
-     CardView image_seeBloodPressureStats;
-     CardView image_seeGlycemiaStats;
-     CardView image_seeHeartbeatStats;
-     CardView image_seeSymptomsStats;
-     CardView image_seePathologyStats;
+    CardView image_seeTemperatureStats;
+    CardView image_seeBloodPressureStats;
+    CardView image_seeGlycemiaStats;
+    CardView image_seeHeartbeatStats;
+    CardView image_seeSymptomsStats;
+    CardView image_seePathologyStats;
     ConstraintLayout expandableView1;
     ConstraintLayout expandableView2;
     ConstraintLayout expandableView3;

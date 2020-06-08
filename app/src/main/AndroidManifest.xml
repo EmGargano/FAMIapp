@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="it.emgargano.famiapp.sms.prova">
+    package="famiapp">
 
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
@@ -23,11 +22,11 @@
         android:roundIcon="@mipmap/hands"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.CentroAccoglienza"
-            android:parentActivityName="it.emgargano.famiapp.sms.it.emgargano.famiapp.MedicalRecordsActivity">
+        <activity android:name="it.emgargano.famiapp.CentroAccoglienza"
+            android:parentActivityName="it.emgargano.famiapp.MedicalRecordsActivity">
         </activity>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.SplashScreeen"
+            android:name="it.emgargano.famiapp.SplashScreeen"
             android:theme="@style/AppTheme.NoActionbar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -36,80 +35,80 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.PopUpQrcodeActivity"
+            android:name="it.emgargano.famiapp.PopUpQrcodeActivity"
             android:theme="@style/Theme.Dialog" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.PathologyActivity"
+            android:name="it.emgargano.famiapp.PathologyActivity"
             android:label="@string/pathologyDetails" />
 
-        <activity android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.ReadMedicalRecordsActivity" />
+        <activity android:name="it.emgargano.famiapp.ReadMedicalRecordsActivity" />
 
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.ChatActivity"
+            android:name="it.emgargano.famiapp.ChatActivity"
             android:label="@string/chat" />
-        <activity android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.ReadRatingsActivity"
+        <activity android:name="it.emgargano.famiapp.ReadRatingsActivity"
             android:label="@string/readRatings"/>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.AddFoodActivity"
+            android:name="it.emgargano.famiapp.AddFoodActivity"
             android:label="@string/modifyFood" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.ScanActivity"
+            android:name="it.emgargano.famiapp.ScanActivity"
             android:theme="@style/AppTheme.NoActionbar"/>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.AdminActivity"
+            android:name="it.emgargano.famiapp.AdminActivity"
             android:label="@string/acceptance"/>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.AppDetailsActivity"
+            android:name="it.emgargano.famiapp.AppDetailsActivity"
             android:theme="@style/AppTheme.NoActionbar"/>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.RetrieveBasicNecessitiesActivity" />
+            android:name="it.emgargano.famiapp.RetrieveBasicNecessitiesActivity" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.RatingActivity"
+            android:name="it.emgargano.famiapp.RatingActivity"
             android:label="@string/rating" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.PatientDetailActivity"
-            android:parentActivityName="it.emgargano.famiapp.sms.it.emgargano.famiapp.PatientListActivity"/>
+            android:name="it.emgargano.famiapp.PatientDetailActivity"
+            android:parentActivityName="it.emgargano.famiapp.PatientListActivity"/>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.KitOpeningActivity"
+            android:name="it.emgargano.famiapp.KitOpeningActivity"
             android:label="@string/kitOpening" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.PatientListActivity"
+            android:name="it.emgargano.famiapp.PatientListActivity"
             android:label="@string/patientList"
             android:theme="@style/AppTheme.NoActionbar"/>
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.AddPathologyActivity"
+            android:name="it.emgargano.famiapp.AddPathologyActivity"
             android:label="@string/addPathology" />
 
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.MedicalRecordsActivity"
+            android:name="it.emgargano.famiapp.MedicalRecordsActivity"
             android:label="@string/medicalRecords"
             android:theme="@style/AppTheme.NoActionbar" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.PersonalDataActivity"
+            android:name="it.emgargano.famiapp.PersonalDataActivity"
             android:label="@string/personalData" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.VideoActivity"
+            android:name="it.emgargano.famiapp.VideoActivity"
             android:label="@string/video" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.AcceptanceActivity" />
+            android:name="it.emgargano.famiapp.AcceptanceActivity" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.CityInfoActivity" />
+            android:name="it.emgargano.famiapp.CityInfoActivity" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.BylawActivity"
+            android:name="it.emgargano.famiapp.BylawActivity"
             android:label="@string/bylaw" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.UsefulNumbersActivity"
+            android:name="it.emgargano.famiapp.UsefulNumbersActivity"
             android:label="@string/usefulNumbers" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.QuestionnairesActivity"
+            android:name="it.emgargano.famiapp.QuestionnairesActivity"
             android:label="@string/questionnaires" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.LoginActivity"
+            android:name="it.emgargano.famiapp.LoginActivity"
             android:theme="@style/AppTheme.NoActionbar" />
         <activity
-            android:name="it.emgargano.famiapp.sms.it.emgargano.famiapp.AddUserActivity"
+            android:name="it.emgargano.famiapp.AddUserActivity"
             android:label="@string/addUser"
-            android:parentActivityName="it.emgargano.famiapp.sms.it.emgargano.famiapp.AdminActivity"/>
+            android:parentActivityName="it.emgargano.famiapp.AdminActivity"/>
     </application>
 
 </manifest>

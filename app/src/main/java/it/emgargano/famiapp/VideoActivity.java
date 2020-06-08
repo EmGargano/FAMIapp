@@ -4,14 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
-import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -21,7 +14,13 @@ import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.widget.FrameLayout;
 import android.widget.Toast;
-//import android.widget.VideoView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
+
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -29,12 +28,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
 import java.util.List;
 import java.util.Vector;
 
 import it.emgargano.famiapp.models.User;
 import it.emgargano.famiapp.models.YouTubeVideos;
-import it.emgargano.famiapp.sms.prova.R;
+import famiapp.R;
+
+//import android.widget.VideoView;
 
 public class VideoActivity extends AppCompatActivity {
 
@@ -52,7 +54,7 @@ public class VideoActivity extends AppCompatActivity {
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
-            actionBar.setDisplayHomeAsUpEnabled(true);
+            ((ActionBar) actionBar).setDisplayHomeAsUpEnabled(true);
         }
 
         recyclerView = findViewById(R.id.recyclerViewVideo);
@@ -86,6 +88,7 @@ public class VideoActivity extends AppCompatActivity {
         @Override
         protected void onActivityResult(int requestCode, int resultCode, Intent data) {
             if (resultCode == Activity.RESULT_CANCELED) {
+                super.onActivityResult(requestCode, resultCode, data);
                 Intent refresh = new Intent(this, VideoActivity.class);
                 startActivity(refresh);
                 this.finish();
